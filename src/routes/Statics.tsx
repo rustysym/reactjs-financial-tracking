@@ -1,12 +1,11 @@
-import { BsFillChatFill } from "react-icons/bs";
 import Navbar from "../components/Navbar";
-import { AiFillBell, AiFillCaretDown } from "react-icons/ai";
-import profile from "../assets/images/avatar2.jpg";
+import { AiFillCaretDown } from "react-icons/ai";
 import transaction from "../assets/images/transaction.png";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { useState } from "react";
 import Calendar from "react-calendar";
+import Header from "../components/Header";
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
@@ -16,25 +15,7 @@ function Statics() {
     <>
       <div className="h-screen w-screen overflow-x-hidden">
         <Navbar />
-        <div className="flex flex-row pl-96 pt-8 h-24 justify-between">
-          <input
-            placeholder="Search, transactions, categories or accounts"
-            className="flex-shrink-0 w-[60%] h-8 rounded-xl p-6"
-          />
-
-          <div className="flex flex-row h-12 relative right-12 space-x-8">
-            <button className="h-12 w-32  bg-[#85CB9D] rounded-md text-gray-200 px-4 hover:bg-[#94f3b6]">
-              Add Transaction
-            </button>
-            <button>
-              <BsFillChatFill size={"16"} />
-            </button>
-            <button>
-              <AiFillBell size={"18"} />
-            </button>
-            <img src={profile} className="w-12 h-12 rounded-full" />
-          </div>
-        </div>
+        <Header title="Create" id={3}/>
         <div className="flex flex-row pl-96 w-full h-full mt-12 space-x-6 p-6">
           <div className="w-2/3 h-full space-y-8">
             <div className="h-auto w-full bg-black/20">

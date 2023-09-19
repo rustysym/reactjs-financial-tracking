@@ -12,6 +12,7 @@ import SignUp from './routes/SignUp';
 import Transactions from './routes/Transactions';
 import Statics from './routes/Statics';
 import AccountandCards from './routes/AccountandCards';
+import Notifications from './routes/Notifications';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: "/accountandcards",
     element: <AccountandCards/>
+  },
+  {
+    path: "/notifications",
+    element: <Notifications/>
   },
 ]);
 ReactDOM.createRoot(document.getElementById('root')!).render(

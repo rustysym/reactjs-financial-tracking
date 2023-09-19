@@ -2,11 +2,11 @@ import Navbar from "../components/Navbar";
 import { GiProfit } from "react-icons/gi";
 import { HiUsers, HiMiniWallet, HiShoppingCart } from "react-icons/hi2";
 import Header from "../components/Header";
-const AccountandCards = () => {
+const Notifications = () => {
   return (
     <div className="flex flex-col overflow-x-hidden overflow-y-hidden h-screen w-screen">
       <Navbar />
-      <Header title="Add Transaction" id={1}/>
+      <Header title={"Create"} id={0}/>
       <div className="flex flex-col pl-96 mt-8">
         <h1 className="font-bold text-xl mb-8">Statements</h1>
         <div className="bg-black/20 h-56 w-[92%] p-6">
@@ -133,7 +133,7 @@ const AccountandCards = () => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default AccountandCards;
+export default Notifications
